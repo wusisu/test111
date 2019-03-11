@@ -22,4 +22,7 @@ steps:
 - script: |
     env
     hostname
+    df -h
+    apt update && apt install -y net-tools
+    ifconfig
   displayName: 'look deeper'
